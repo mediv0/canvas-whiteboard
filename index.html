@@ -298,11 +298,11 @@
             const shape = shapes[i];
 
             if (shape.type === "circle") {
-                drawArc(shape.x, shape.y, shape.radius);
+                drawArc(shape.x, shape.y, shape.radius, shape.thickness, shape.color);
             }
 
             if (shape.type === "rectangle") {
-                drawRect(shape.x1, shape.y1, shape.x2, shape.y2);
+                drawRect(shape.x1, shape.y1, shape.x2, shape.y2, shape.thickness, shape.color);
             }
 
             if (shape.type === "brush") {
